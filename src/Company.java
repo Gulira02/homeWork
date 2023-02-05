@@ -1,9 +1,9 @@
 public class Company {
     String name;
-    String country;
-    int yearOfFoundation;
-    Person founder;
-    Group[] groups;
+   private   String country;
+   private int yearOfFoundation;
+   private Person founder;
+   private Group[] groups;
 
     public Company(String name, String country, int yearOfFoundation, Person founder, Group[] groups) {
         this.name = name;

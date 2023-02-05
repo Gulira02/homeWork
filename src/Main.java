@@ -20,15 +20,15 @@ public class Main {
         System.out.println("Company country: " + company.getCountry());
         System.out.println("Company year of foundation: " + company.getYearOfFoundation());
         System.out.println("Founder:  ");
-        System.out.println("First name: " + company.founder.getFirstName());
-        System.out.println("Last name: " + company.founder.getLastName());
-        System.out.println("Date of birth: " + company.founder.dateOfBirth);
+        System.out.println("First name: " + company.getFounder().getFirstName());
+        System.out.println("Last name: " + company.getFounder().getLastName());
+        System.out.println("Date of birth: " + company.getFounder().getDateOfBirth());
 
 
         System.out.println("Groups: ");
-        for (Group group : company.groups) {
+        for (Group group : company.getGroups()) {
             System.out.println("Name: " + group.groupName + " Start date: " + group.startDate +
-                    " Mentor: " + group.mentor.firstName + " " + group.mentor.lastName);
+                    " Mentor: " + group.getGroupName() + " " + group.mentor.getLastName());
         }
 
     }

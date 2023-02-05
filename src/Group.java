@@ -8,4 +8,15 @@ public class Group {
         this.mentor = mentor;
     }
 
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public Person getMentor() {
+        return mentor;
+    }
 }
